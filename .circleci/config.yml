@@ -13,7 +13,7 @@ jobs:
       - run: |
           yarn install
           yarn build
-          ls build
+          pwd
           yarn test
 
 workflows:
