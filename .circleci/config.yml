@@ -3,13 +3,9 @@ executors:
   my-custom-executor:
     docker:
       - image: node:latest
-        auth:
-          # ensure you have first added these secrets
-          # visit app.circleci.com/settings/project/github/Jason-Wanxt/token-bridge-contracts/environment-variables
-          username: $DOCKER_HUB_USER
-          password: $DOCKER_HUB_PASSWORD
+
 jobs:
-  my-job-name:
+  contract-test:
 
     executor: my-custom-executor
     steps:
